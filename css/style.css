@@ -1,0 +1,211 @@
+/* =========== Simple Reset ================== */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ================ Body Styles ================ */
+
+body {
+  font-family: Muli;
+  font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Unna';
+}
+
+img {
+  max-width: 100%;
+}
+
+.page {
+  padding-top: 6rem;
+}
+
+/* ================== Navigation Styles ==================== */
+
+.navbar {
+  padding: 0 1rem;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-brand {
+  font-family: 'Dalmais';
+  font-size: 50px;
+  letter-spacing: -2px;
+}
+
+nav.navbar-light {
+  background: #fff !important;
+  box-shadow: 0 0 10px rgba(0,0,0,.05);
+}
+
+.nav-item {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.form-inline {
+  padding: 1.5rem 0;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+
+
+
+
+.meta {
+  padding: .75rem;
+  font-family: Unna;
+  text-transform: lowercase;
+  color: #b59f5b;
+  font-size: .75rem;
+  font-style: italic;
+}
+
+.entry-header {
+  text-align: center;
+}
+
+.category-label {
+  display: inline-block;
+  background: #fff;
+  padding: .5rem .75rem;
+  margin: .75rem;
+  font-family: Muli;
+  font-size: .75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #b59f5b;
+}
+
+.category-label:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #b59f5b;
+}
+
+.read-more {
+  font-family: Muli;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #b59f5b;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  color: #111;
+  text-decoration: none;
+}
+
+.blockquote {
+  font-family: Unna;
+  font-style: italic;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 0 1rem .5rem;
+  margin: 2.5rem 0;
+  font-size: 1rem;
+}
+
+blockquote:before {
+  color: #b59f5b;
+  content: open-quote;
+  font-size: 4em;
+  line-height: .45em;
+  margin-right: 0.25em;
+  font-family: Unna;
+  background: #fff;
+}
+
+.blockquote p {
+  margin-top: -1.5rem;
+}
+
+
+
+article {
+  padding-bottom: 5rem;
+}
+
+.page img {
+  padding-bottom: 1.75rem;
+}
+
+p.copyright {
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .5rem;
+  padding: .5rem;
+}
+
+.collapse-widgets {
+  margin-left: -15px;
+  padding-bottom: 2rem;
+}
+
+footer {
+  padding: 2rem 0;
+}
+
+footer li, .collapse li {
+  list-style-type: none;
+  margin-bottom: .25rem;
+  font-size: .75rem;
+}
+
+footer a, .collapse a {
+  color: #111;
+}
+
+footer a:hover, .collapse a:hover {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
+.social {
+  padding: .75rem .75rem .5rem;
+}
+
+.social li {
+  display: inline;
+  text-align: center;
+  font-weight: bold;
+}
+
+.social a {
+  color: #111;
+  padding: .75rem;
+}
+
+.social a:hover {
+  color: #b59f5b;
+  padding: .75rem;
+  text-decoration: none;
+}
+
+.widget-tag-cloud a {
+  //text-transform: uppercase;
+  font-size: .75rem;
+  //padding: .125rem;
+  display: inline-block;
+  color: #111;
+  //background: #b59f5b;
+  margin: .125rem;
+}
