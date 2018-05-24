@@ -8,12 +8,15 @@
 /* ================ Body Styles ================ */
 
 body {
-  font-family: Muli;
-  font-size: 14px;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #333;
+  font-size: 16px;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Unna';
+  font-family: "Bedini", "Didot", serif;
+  font-weight: bold;
+  color: #333;
 }
 
 img {
@@ -22,6 +25,10 @@ img {
 
 .page {
   padding-top: 6rem;
+}
+
+.page-single {
+  padding-top: 1rem;
 }
 
 /* ================== Navigation Styles ==================== */
@@ -36,13 +43,14 @@ img {
 
 .navbar-brand {
   font-family: 'Dalmais';
-  font-size: 50px;
-  letter-spacing: -2px;
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+  color: #555;
 }
 
 nav.navbar-light {
   background: #fff !important;
-  box-shadow: 0 0 10px rgba(0,0,0,.05);
+  //box-shadow: 0 0 10px rgba(0,0,0,.05);
 }
 
 .nav-item {
@@ -62,34 +70,37 @@ nav.navbar-light {
   border-radius: 0;
 }
 
-
-
-
-
-.meta {
-  padding: .75rem;
-  font-family: Unna;
-  text-transform: lowercase;
-  color: #b59f5b;
-  font-size: .75rem;
-  font-style: italic;
-}
+/* General Blog Styles */
 
 .entry-header {
   text-align: center;
 }
 
+.entry-header img {
+  width: 700px;
+  height: 425px;
+  overflow: hidden;
+}
+
+h2 a {
+  color: #333;
+}
+
+h2 a:hover {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
 .category-label {
   display: inline-block;
-  background: #fff;
-  padding: .5rem .75rem;
-  margin: .75rem;
-  font-family: Muli;
+  background: transparent;
+  padding: .35rem .75rem .25rem;
+  margin: .5rem;
   font-size: .75rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #b59f5b;
+  color: #333;
 }
 
 .category-label:hover {
@@ -98,62 +109,83 @@ nav.navbar-light {
   background: #b59f5b;
 }
 
-.read-more {
-  font-family: Muli;
-  font-size: 1rem;
+p.meta a {
+  display: inline-block;
+  margin: 1rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #b59f5b;
+  color: #333;
+  font-size: .5625rem;
   font-weight: bold;
 }
 
-.read-more:hover {
-  color: #111;
+p.meta a:hover {
+  color: #b59f5b;
   text-decoration: none;
 }
 
+.page img, .page-single img {
+  padding-bottom: 1rem;
+}
+
+.read-more {
+  font-size: .75rem;
+  line-height: 1;
+  //text-transform: uppercase;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  //font-family: "Bedini";
+  padding: .75rem;
+}
+
+.read-more:hover {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
+.jumbotron {
+  background: linear-gradient(
+    rgba(255,255,255,.8),
+    rgba(255,255,255,.8)
+    ),
+  url(../img/rakan-alreqabi-648327-unsplash.jpg) no-repeat;
+  padding: 3rem 2rem 2rem;
+  background-size: cover;
+}
+
+article {
+  padding-bottom: 3rem;
+}
+
 .blockquote {
-  font-family: Unna;
-  font-style: italic;
+  font-family: "Bedini";
+  font-weight: bold;
   text-align: center;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  padding: 0 1rem .5rem;
+  padding: .5rem 1rem;
   margin: 2.5rem 0;
   font-size: 1rem;
 }
 
-blockquote:before {
-  color: #b59f5b;
+blockquote:before { /* Adapted from https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
+  color: #333;
   content: open-quote;
   font-size: 4em;
-  line-height: .45em;
-  margin-right: 0.25em;
-  font-family: Unna;
+  line-height: .2em;
+  margin-right: 0;
+  font-family: "Bedini";
+  font-weight: bold;
   background: #fff;
+  //vertical-align: -0.4em;
 }
 
 .blockquote p {
-  margin-top: -1.5rem;
+  margin-top: -1.25rem;
 }
 
 
-
-article {
-  padding-bottom: 5rem;
-}
-
-.page img {
-  padding-bottom: 1.75rem;
-}
-
-p.copyright {
-  color: #aaa;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: .5rem;
-  padding: .5rem;
-}
+/* ============== Widget Areas ================== */
 
 .collapse-widgets {
   margin-left: -15px;
@@ -161,13 +193,13 @@ p.copyright {
 }
 
 footer {
-  padding: 2rem 0;
+  padding: 1rem 0 2rem;
 }
 
 footer li, .collapse li {
   list-style-type: none;
   margin-bottom: .25rem;
-  font-size: .75rem;
+  font-size: 1rem;
 }
 
 footer a, .collapse a {
@@ -179,6 +211,21 @@ footer a:hover, .collapse a:hover {
   text-decoration: none;
 }
 
+.widget-tag-cloud a {
+  font-size: 1rem;
+  display: inline-block;
+  color: #111;
+  margin: .125rem;
+}
+
+.widget h3 {
+  font-family: "Quattrocento Sans";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  //font-size: 1.25rem;
+}
+
+
 .social {
   padding: .75rem .75rem .5rem;
 }
@@ -186,26 +233,25 @@ footer a:hover, .collapse a:hover {
 .social li {
   display: inline;
   text-align: center;
+  font-family: "Bedini";
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .social a {
   color: #111;
-  padding: .75rem;
+  padding: .25rem;
 }
 
 .social a:hover {
   color: #b59f5b;
-  padding: .75rem;
   text-decoration: none;
 }
 
-.widget-tag-cloud a {
-  //text-transform: uppercase;
-  font-size: .75rem;
-  //padding: .125rem;
-  display: inline-block;
-  color: #111;
-  //background: #b59f5b;
-  margin: .125rem;
+p.copyright {
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .5rem;
+  padding: .5rem;
 }
