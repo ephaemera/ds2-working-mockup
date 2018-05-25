@@ -28,7 +28,7 @@ img {
 }
 
 .page-single {
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 
 /* ================== Navigation Styles ==================== */
@@ -50,7 +50,7 @@ img {
 
 nav.navbar-light {
   background: #fff !important;
-  //box-shadow: 0 0 10px rgba(0,0,0,.05);
+  box-shadow: 0 0 10px rgba(0,0,0,.05);
 }
 
 .nav-item {
@@ -74,19 +74,23 @@ nav.navbar-light {
 
 .entry-header {
   text-align: center;
+  padding-top: 2rem;
 }
 
-.entry-header img {
-  width: 700px;
-  height: 425px;
-  overflow: hidden;
+.entry-header-right {
+  text-align: right;
 }
 
-h2 a {
+.entry-right h2 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #333;
 }
 
-h2 a:hover {
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   color: #b59f5b;
   text-decoration: none;
 }
@@ -103,10 +107,10 @@ h2 a:hover {
   color: #333;
 }
 
+
 .category-label:hover {
-  color: #fff;
+  color: #b59f5b;
   text-decoration: none;
-  background: #b59f5b;
 }
 
 p.meta a {
@@ -127,34 +131,89 @@ p.meta a:hover {
   padding-bottom: 1rem;
 }
 
-.read-more {
+.read-more, .read-more-left {
   font-size: .75rem;
   line-height: 1;
-  //text-transform: uppercase;
   color: #333;
   font-weight: bold;
   display: block;
-  //font-family: "Bedini";
   padding: .75rem;
 }
 
-.read-more:hover {
+.read-more-left {
+  padding: 0 0 0 .2rem;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.read-more:hover, .read-more-left:hover {
   color: #b59f5b;
   text-decoration: none;
 }
 
-.jumbotron {
+.jumbotron { /*   url(../img/bright-energy-idea-247753.jpg) no-repeat;  url(../img/richard-jacobs-541439-unsplash.jpg) no-repeat;   url(../img/ray-hennessy-118046-unsplash.jpg) no-repeat; url(../img/rakan-alreqabi-648327-unsplash.jpg) no-repeat;  */
   background: linear-gradient(
-    rgba(255,255,255,.8),
-    rgba(255,255,255,.8)
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.7)
     ),
-  url(../img/rakan-alreqabi-648327-unsplash.jpg) no-repeat;
-  padding: 3rem 2rem 2rem;
+  url(../img/bright-energy-idea-247753.jpg) no-repeat;
+  padding: 8rem 2rem;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  //background-position: bottom center;
+  //margin-bottom: 0rem;
+  border-bottom: 1px solid #efefff;
+}
+
+
+.jumbotron h1, .jumbotron h1 a {
+  color: #fff;
+}
+
+.jumbotron h1 a:hover {
+  color: #b59f5b;
+}
+
+.jumbotron a.category-label {
+  color: #b59f5b;
+}
+
+.jumbotron a.category-label:hover {
+  color: #fff;
+}
+
+.jumbotron a.read-more, .jumbotron .meta a {
+  color: #ccc;
+}
+
+.jumbotron a.read-more:hover {
+  color: #b59f5b;
+}
+
+.latest {
+  padding: 0rem 0 3rem;
+}
+
+.latest p {
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 article {
-  padding-bottom: 3rem;
+  padding: 0 3rem 3rem;
+}
+
+p.drop-cap::first-letter {
+  float: left;
+  font-size: 78px;
+  line-height: 1;
+  font-family: "Bedini", serif;
+  font-weight: bold;
+  padding-right: 6px;
+  margin-bottom: -6px;
 }
 
 .blockquote {
@@ -182,6 +241,21 @@ blockquote:before { /* Adapted from https://css-tricks.com/snippets/css/simple-a
 
 .blockquote p {
   margin-top: -1.25rem;
+}
+
+.post-nav {
+  //border-top: 1px solid #efefef;
+  //border-bottom: 1px solid #efefef;
+  padding: 1.5rem 0;
+}
+
+.post-nav a {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.post-nav a:hover {
+  color: #b59f5b;
 }
 
 
@@ -225,6 +299,12 @@ footer a:hover, .collapse a:hover {
   //font-size: 1.25rem;
 }
 
+.fa-chevron-circle-up {
+  color: #333 !important;
+  position: relative;
+  top: -27px;
+  background: #fff;
+}
 
 .social {
   padding: .75rem .75rem .5rem;
