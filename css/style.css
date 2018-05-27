@@ -86,6 +86,11 @@ nav.navbar-light {
     padding-top: 2rem;
 }
 
+.entry-header-page {
+  text-align: center;
+  padding: 5.5rem 0;
+}
+
 .entry-archive h2 {
     font-size: 1.25rem;
     margin: 0;
@@ -134,14 +139,15 @@ p.meta a:hover {
     text-decoration: none;
 }
 .jumbotron {
-    /*   url(../img/bright-energy-idea-247753.jpg) no-repeat;  url(../img/richard-jacobs-541439-unsplash.jpg) no-repeat;   url(../img/ray-hennessy-118046-unsplash.jpg) no-repeat; url(../img/rakan-alreqabi-648327-unsplash.jpg) no-repeat;  url(../img/nik-macmillan-153579-unsplash.jpg) no-repeat; */
-    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/charlie-costello-301722-unsplash.jpg) no-repeat;
+    /*   url(../img/bright-energy-idea-247753.jpg) no-repeat;  url(../img/richard-jacobs-541439-unsplash.jpg) no-repeat;   url(../img/ray-hennessy-118046-unsplash.jpg) no-repeat; url(../img/rakan-alreqabi-648327-unsplash.jpg) no-repeat;  url(../img/nik-macmillan-153579-unsplash.jpg) no-repeat; url(../img/annie-spratt-558907-unsplash.jpg) no-repeat; */
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+    url(../img/joanna-kosinska-199299-unsplash.jpg) no-repeat;
     padding: 8rem 2rem;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-position: center center;
+    background-position: center;
     border-bottom: 1px solid #efefff;
     margin-bottom: 0;
 }
@@ -165,15 +171,16 @@ p.meta a:hover {
 .jumbotron a.read-more:hover {
     color: #b59f5b;
 }
-.latest {
-    padding: 0rem 0 3rem;
+.latest, .archive {
+    padding: 0 0 3rem;
 }
-.latest p {
+.latest p, .archive p {
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-article {
+
+article { /* adjust this for small breakpoints */
     padding: 0 3rem 3rem;
 }
 p.drop-cap::first-letter {
@@ -186,7 +193,7 @@ p.drop-cap::first-letter {
     margin-bottom: -6px;
 }
 .blockquote {
-    font-family: "Bedini";
+    font-family: "Bedini", "Didot", serif;
     font-weight: bold;
     text-align: center;
     border-top: 1px solid #ddd;
@@ -202,7 +209,7 @@ blockquote:before {
     font-size: 4em;
     line-height: .2em;
     margin-right: 0;
-    font-family: "Bedini";
+    font-family: "Bedini", "Didot", serif;
     font-weight: bold;
     background: #fff;
     //vertical-align: -0.4em;
