@@ -91,10 +91,12 @@ nav.navbar-light {
   padding: 5.5rem 0;
 }
 
+@media (min-width: 576px) {
 .entry-archive h2 {
     font-size: 1.25rem;
     margin: 0;
     text-align: right;
+  }
 }
 
 .category-label {
@@ -139,17 +141,34 @@ p.meta a:hover {
     text-decoration: none;
 }
 .jumbotron {
-    /*   url(../img/bright-energy-idea-247753.jpg) no-repeat;  url(../img/richard-jacobs-541439-unsplash.jpg) no-repeat;   url(../img/ray-hennessy-118046-unsplash.jpg) no-repeat; url(../img/rakan-alreqabi-648327-unsplash.jpg) no-repeat;  url(../img/nik-macmillan-153579-unsplash.jpg) no-repeat; url(../img/annie-spratt-558907-unsplash.jpg) no-repeat; */
+    /*   url(../img/bright-energy-idea-247753.jpg) no-repeat;  url(../img/richard-jacobs-541439-unsplash.jpg) no-repeat;   url(../img/ray-hennessy-118046-unsplash.jpg) no-repeat; url(../img/rakan-alreqabi-648327-unsplash.jpg) no-repeat;  url(../img/nik-macmillan-153579-unsplash.jpg) no-repeat; url(../img/annie-spratt-558907-unsplash.jpg) no-repeat; url(../img/joanna-kosinska-199299-unsplash.jpg) no-repeat; url(../img/amy-reed-339261-unsplash.jpg) no-repeat; */
     background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
-    url(../img/joanna-kosinska-199299-unsplash.jpg) no-repeat;
+    url(../img/amy-reed-339261-unsplash.jpg) no-repeat;
     padding: 8rem 2rem;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-position: center;
+    background-position: center center;
     border-bottom: 1px solid #efefff;
     margin-bottom: 0;
+}
+
+.jumbotron.featured {
+  background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+  url(../img/bright-energy-idea-247753.jpg) no-repeat;
+  background-position: center center;
+}
+.jumbotron.archives {
+  background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+  url(../img/christa-dodoo-485704-unsplash.jpg) no-repeat;
+  background-position: center center;
+}
+.jumbotron.about {
+  background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+  url(../img/joanna-kosinska-199299-unsplash.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .jumbotron h1,
 .jumbotron h1 a {
@@ -180,17 +199,27 @@ p.meta a:hover {
     text-transform: uppercase;
 }
 
+.archive a {
+  color: #333;
+}
+
+.archive a:hover {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
 article { /* adjust this for small breakpoints */
     padding: 0 3rem 3rem;
 }
 p.drop-cap::first-letter {
     float: left;
     font-size: 78px;
-    line-height: 1;
+    line-height: .75; /* Reduced from lh=1 to adjust drop-cap between FF and GC */
     font-family: "Bedini", serif;
     font-weight: bold;
     padding-right: 6px;
     margin-bottom: -6px;
+    margin-top: 11px; /* added to adjust drop-cap between FF and GC */
 }
 .blockquote {
     font-family: "Bedini", "Didot", serif;
